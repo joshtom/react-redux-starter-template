@@ -13,6 +13,7 @@
      The name of the branch should be similar to the issue you are working on. 
      E.G Say you are working on **comment** issue the name of your branch will be **comment** 
      <br />
+     An Example is being created in the PR
      ```
      NB: All PR sent to main branch will be considered invalid
      ```
