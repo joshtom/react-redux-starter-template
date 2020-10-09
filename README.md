@@ -7,6 +7,8 @@
 A lot of people complain about redux having too much boilerplate which makes them uncomfortable when they are about to start a new project. <br />
 
 This project is centered around creating all the boiler plate you need to get you up and running as soon as you can. Please feel free to contribute. Cheers!
+<br /> <br />
+We will be building a simple counter App which implements redux in both **class component** and **functional component**, Please check the issues for more info
 
 - ## I am not familiar with redux. Can i still contribute?
 
@@ -20,6 +22,8 @@ This project is centered around creating all the boiler plate you need to get yo
   ```
   NB: All PR sent to main branch will be considered invalid
   ```
+- ## What about CSS Library?
+  Only CSS or it's preprocessor (SASS) will be allowed for this project. We want to make it more flexible in such a way that the user can decide on which design component they would like to use for their product.
 
 ## Installation
 
