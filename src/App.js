@@ -7,6 +7,8 @@ import { connect } from 'react-redux'
 import { stopLoading } from './redux/actions/testAction'
 //Router
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+// Pages
+import NotFound from "./pages";
 
 function App({ loading, stopLoading }) {
 
@@ -20,15 +22,15 @@ function App({ loading, stopLoading }) {
             <h1>you are at /</h1>
           </Route>
           <Route exact path="/testroute">
+            {
+              loading
+                  ? <h1>Loading...</h1>
+                  : <h1>Redux Success</h1>
+            }
             <h1>you are at /testRoute</h1>
           </Route>
+          <Route component={NotFound}/>
         </Switch>
-        {
-          loading
-            ? <h1>Loading...</h1>
-            : <h1>Redux Success</h1>
-        }
-
       </div>
     </BrowserRouter>
 
