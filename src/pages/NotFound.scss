@@ -1,12 +1,12 @@
 .container {
   height: 100vh;
-  background: #ffffff url("./assets/background.png") no-repeat center;
-  background-size:contain;
+  background: #ffffff url("../assets/images/background.png") no-repeat center;
+  background-size: contain;
 }
 
 .error-message {
   padding: 4rem 2rem;
-  color:#455a64;
+  color: #455a64;
   background: #ececec70;
   backdrop-filter: saturate(180%) blur(20px);
 }
