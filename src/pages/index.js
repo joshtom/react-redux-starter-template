@@ -1,3 +1,6 @@
-import NotFound from "./NotFound";
+import NotFound from "./404/NotFound";
+import CounterPage from "./Counter/index"
 
-export default NotFound;
+
+// All pages should be exported as a named export here
+export  { NotFound, CounterPage };
