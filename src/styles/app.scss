@@ -2,3 +2,9 @@
 // CORE
 @import "./core/overwrite";
 @import "./core/typography";
+@import "./core/variables";
+
+// Main style
+@import "./header/header.scss";
+@import "./global/global.scss";
+@import "./counter/counter.scss";
