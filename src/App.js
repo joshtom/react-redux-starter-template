@@ -5,16 +5,20 @@ import "./styles/app.scss";
 import { connect } from "react-redux";
 import { stopLoading } from "./redux/actions/testAction";
 //Router
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 // Pages
-import NotFound from "./pages";
-import CounterPage from "./pages/Counter";
+import {NotFound, CounterPage} from "./pages";
 function App({ loading, stopLoading }) {
   setTimeout(stopLoading, 1000);
 
   return (
     <BrowserRouter>
       <div>
+        <div className="nav">
+        <Link to="/testroute"> Test route </Link>
+        <Link to="/counter-app"> Counter App component </Link>
+        <Link to="/counter-class"> Counter Class component </Link>
+        </div>
         <Switch>
           <Route exact path="/">
             <h1>you are at /</h1>
@@ -23,7 +27,7 @@ function App({ loading, stopLoading }) {
             {loading ? <h1>Loading...</h1> : <h1>Redux Success</h1>}
             <h1>you are at /testRoute</h1>
           </Route>
-          <Route exact path="/counter" component={CounterPage} />
+          <Route exact path="/counter-app" component={CounterPage} />
           <Route exact component={NotFound} />
         </Switch>
       </div>
