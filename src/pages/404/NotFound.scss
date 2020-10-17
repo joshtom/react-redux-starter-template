@@ -1,0 +1,42 @@
+.container {
+  height: 100vh;
+  background: #ffffff url("../../assets/images/background.png") no-repeat center;
+  background-size: contain;
+}
+
+.error-message {
+  padding: 4rem 2rem;
+  color: #455a64;
+  background: #ececec70;
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.bottom-right {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    position: relative;
+    height: auto;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-position: 0 90%;
+  }
+  
+  .error-message h1 {
+    font-size: 1.8rem;
+    text-overflow: ellipsis;
+  }
+
+  .bottom-right {
+    right: 50%;
+    transform: translateX(50%);
+    white-space: nowrap;
+    bottom: 1rem;
+  }
+}
