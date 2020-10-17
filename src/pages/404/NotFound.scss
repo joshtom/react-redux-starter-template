@@ -16,3 +16,27 @@
   right: 2rem;
   bottom: 2rem;
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    position: relative;
+    height: auto;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-position: 0 90%;
+  }
+  
+  .error-message h1 {
+    font-size: 1.8rem;
+    text-overflow: ellipsis;
+  }
+
+  .bottom-right {
+    right: 50%;
+    transform: translateX(50%);
+    white-space: nowrap;
+    bottom: 1rem;
+  }
+}

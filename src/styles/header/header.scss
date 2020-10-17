@@ -14,3 +14,15 @@
         font-size: 1.5rem;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        margin: 1rem 0;
+        
+        a {
+            padding: 1rem 3rem;
+        }
+    }
+}
