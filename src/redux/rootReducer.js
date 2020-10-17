@@ -1,11 +1,11 @@
-import { combineReducers } from 'redux'
-import { counterReducer } from './reducers/counterReducer'
+import { combineReducers } from "redux";
 
-import loading from './reducers/testReducer'
+import loading from "./reducers/testReducer";
+import counterReducer from "./reducers/counterReducer";
 
 const RootReducer = combineReducers({
   loading,
-  counterReducer
-})
+  counter: counterReducer,
+});
 
-export default RootReducer
+export default RootReducer;

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './NotFound.scss';
-import PrimaryButton from "../components/buttons/primary_button/PrimaryButton";
+import PrimaryButton from "../../components/buttons/primary_button/PrimaryButton";
+
 
 
 const quotes = [
