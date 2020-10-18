@@ -8,6 +8,7 @@ import { stopLoading } from "./redux/actions/testAction";
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 // Pages
 import {NotFound, CounterPage} from "./pages";
+import { Counter } from './components/Counter/index';
 
 
 
@@ -20,7 +21,7 @@ function App({ loading, stopLoading }) {
         <div className="header">
         <Link to="/testroute"> Test route </Link>
         <Link to="/counter-class"> Counter Class component </Link>
-        <Link to="/counter-app"> Counter App component </Link>
+        <Link to="/counter-function"> Counter Function component </Link>
         </div>
         <div className="main">
         <Switch>
@@ -33,6 +34,7 @@ function App({ loading, stopLoading }) {
             <h1>you are at /testRoute</h1>
           </Route>
           <Route exact path="/counter-class" component={CounterPage} />
+          <Route exact path="/counter-function" component={Counter} />
           <Route exact component={NotFound} />
         </Switch>
         </div>
