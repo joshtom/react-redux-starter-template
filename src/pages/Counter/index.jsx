@@ -8,14 +8,14 @@ import {
 class CounterPage extends Component {
   render() {
     const value = this.props.value;
-    const { decreaseValue, increaseValue } = this.props;
-
+    const { decrementValue, incrementValue } = this.props;
+    
     return (
       <React.Fragment>
         <div className="counter-class">
           <div className="counter-class__container">
             <div
-              onClick={decreaseValue}
+              onClick={decrementValue}
               className="counter-class__container--leftArrow"
             >
               {" "}
@@ -29,7 +29,7 @@ class CounterPage extends Component {
             </div>
             <div className="counter-class__container--box">{value}</div>
             <div
-              onClick={increaseValue}
+              onClick={incrementValue}
               className="counter-class__container--rightArrow"
             >
               <svg
@@ -51,9 +51,9 @@ const mapStateToProps = ({ counter }) => ({
   value: counter.value,
 });
 
-const mapDispatchToProps = {
-  decreaseValue,
-  increaseValue,
-};
+const mapDispatchToProps = dispatch => ({
+  incrementValue: () => dispatch(increaseValue()),
+  decrementValue: () => dispatch(decreaseValue())
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(CounterPage);
