@@ -1,7 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { decreaseValue } from '../../redux/actions/counterActions';
-import { increaseValue } from '../../redux/actions/counterActions/index';
+import { increaseValue, decreaseValue } from '../../redux/actions/counterActions';
 
 export function Counter() {
 

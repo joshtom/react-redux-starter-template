@@ -5,5 +5,5 @@ export const increaseValue = () => {
 };
 
 export const decreaseValue = () => {
-  return {type: DECREMENT,};
+  return {type: DECREMENT};
 };
