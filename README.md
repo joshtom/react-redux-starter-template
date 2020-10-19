@@ -36,7 +36,7 @@ We will be building a simple counter App which implements redux in both **class 
 -   Clone your forked repository to your pc ( git clone `https://github.com/joshtom/react-redux-starter-template.git`)
 -   Create a new branch for your modifications (ie. `git branch new-user` and check it out `git checkout new-user` and `git checkout -b new-user`)
 -   Run `npm` from inside the cloned project and run `npm start` after the previous command execution.
--   See the issues from the https://github.com/indeplot/indeplot/issues and comment and ask for working
+-   See the issues from the https://github.com/joshtom/react-redux-starter-template/issues and comment and ask for working
 -   After your assigned work do the following
 -   Add your files (`git add -A`), commit (`git commit -m "added myself"`) and push (`git push origin new-user`)
 -   Create a pull request to the `main` branch and your pull request title must contain your work short title
@@ -51,19 +51,19 @@ We will be building a simple counter App which implements redux in both **class 
 > Resolve the [merge-conflicts](https://www.atlassian.com/de/git/tutorials/using-branches/merge-conflicts) if any.
 
 > ```bash
-> #Add upstream repo
+> # Add upstream repo
 > git remote add upstream https://github.com/joshtom/react-redux-starter-template.git
 >
-> #Disable accidental push to the upstream
+> # Disable accidental push to the upstream
 > git remote set-url --push upstream DISABLE
 >
-> #List the remote repo and fetch references
+> # List the remote repo and fetch references
 > git remote -v && git fetch upstream
 >
-> #Check for any new commits in the upstream branch
+> # Check for any new commits in the upstream branch
 > git log HEAD..upstream/main #No output indicates, upstream has not moved ahead
 >
-> #See the patch difference between local and upstream branch
+> # See the patch difference between local and upstream branch
 > git diff -p HEAD..upstream/main
 >
 > ```
@@ -83,16 +83,6 @@ git push -u origin <your_branch_name>
 **8.** Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) !
 
 **9.** **Congratulations!** Sit and relax, you've made your contribution to [react-redux-starter-template](https://github.com/joshtom/react-redux-starter-template) project.
-
-## Installation
-
-Before you begin contributing, you should install all the dependencies <br />
-
-```
-npm install
-```
-
-This will allow you to get the dependecies being used on this project.
 
 ## Ground Rules
 
